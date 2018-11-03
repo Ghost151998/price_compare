@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Description</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex,follow" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    
+    <style>
+      body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+      .mySlides {
+        display:none;
+        object-fit: cover;
+        height: 430px;
+      }
+      .mySlides img{
+        display: block;
+        max-width:250px;
+        max-height:430px;
+        
+      }
+      .sml img{
+        width: 100%;
+      }
+      .sml{
+        margin-right: 8%;
+      }
+      .right-column h1 {
+        font-weight: 300;
+        font-size: 52px;
+        color: #43484D;
+        letter-spacing: -2px;
+        margin-bottom:50px;
+      }
+      .right-column p{
+         font-size: 20px;
+        font-weight: 400;
+        color: #86939E;
+        margin-bottom: 20px;
+        display: inline-block;
+        text-transform: uppercase;
+      }
+      .right-column span{
+        font-size: 12px;
+        color: #358ED7;
+        letter-spacing: 1px;
+        text-decoration: none;
+      }
+      .compare p{
+        font-weight: 300;
+        font-size: 32px;
+        color: #43484D;
+        letter-spacing: -2px;
+      }
+      .shad{
+        box-shadow:0 4px 10px 0 rgba(0, 0, 0, 0.4); 
+        text-align: center;
+      }
+      .prc{text-align: center;}
+    </style>
+</head>
+
+<body>
+
+<div class="container-fluid" style="margin-left:10%;">
+  <!-- Slideshow Header -->
+  <div class="row">
+  <div class="left col-sm-4" style="border-style:ridge;border-width:1px;margin-top:2%;padding:3%;padding-top:0; margin-bottom: 1%;">
+    <div class="container" style="margin-bottom: 5%;">
+      <h2 style="margin-left:8%;margin-bottom: 4%;">Phone</h2>
+      <div class="w3-display-container mySlides">
+       <img src="3-a.jpg" style="margin-bottom:-6px">
+      </div>
+      <div class="w3-display-container mySlides">
+       <img src="3-b.jpg" style="margin-bottom:-6px">
+      </div>
+      <div class="w3-display-container mySlides">
+        <img src="3-c.jpg" style="margin-bottom:-6px"> 
+      </div>  
+    </div>
+
+    <div class="row" style="box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.20);padding: 10px;width:80%;">
+      <div class="col-sm-3 sml">
+        <img class="demo w3-opacity w3-hover-opacity-off" src="3-a.jpg" style="cursor:pointer" onclick="currentDiv(1)" >
+      </div>
+      <div class="col-sm-3 sml">
+        <img class="demo w3-opacity w3-hover-opacity-off" src="3-b.jpg" style="cursor:pointer" onclick="currentDiv(2)" >
+      </div>
+      <div class="col-sm-3 sml">
+        <img class="demo w3-opacity w3-hover-opacity-off" src="3-c.jpg" style="cursor:pointer" onclick="currentDiv(3)">
+      </div>    
+    </div>
+  </div>
+
+  <div class="right-column col-sm-8" style="margin-top: 5%;">
+    <h1 style="">Phone name</h1>
+    <span>Min Cost- <p class="fa fa-inr"> 37647</p></span><br>
+    <span>Brand- <p>Lenovo</p></span><br>
+    <span>Model- <p>Lenovo</p></span><br>
+    <span>Rear Camera- <p>djfbeshfuewfh</p></span><br>
+    <span>Front camera- <p>Lenovo</p></span><br>
+    <span>Ram- <p>Lenovo</p></span><br>
+    <span>CPU- <p>Lenovo</p></span><br>
+    <span>Internal- <p>Lenovo</p></span><br>
+    <span>Battery- <p>Lenovo</p></span><br>
+    <span>4g- <p>Lenovo</p></span><br>
+    <span>fingerrpint- <p>Lenovo</p></span><br>
+  </div>
+</div>
+
+<div class="row compare" style="margin-top:5%;margin-left: 10%;">
+    <div class="col-sm-3 shad">
+      <p>Amazon</p>
+    </div>
+    <div class="col-sm-3 shad">
+      <p>Flipkart</p>
+    </div>
+    <div class="col-sm-3 shad">
+      <p>Snapdeal</p>
+    </div> 
+</div>
+<div class="row compare" style="margin-top:1%;margin-left: 10%; margin-bottom: 10%;">
+    <div class="col-sm-3 prc">
+      <p class="fa fa-inr"> 4000</p>
+    </div>
+    <div class="col-sm-3 prc">
+      <p class="fa fa-inr"> 2345</p>
+    </div>
+    <div class="col-sm-3 prc">
+      <p class="fa fa-inr"> 3848</p>
+    </div> 
+</div>
+
+
+</div>
+
+
+
+<script>
+
+// Slideshow Apartment Images
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+}
+</script>
+
+</body>
+</html>
