@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
     
     <style>
       body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
@@ -35,7 +37,6 @@
         font-size: 52px;
         color: #43484D;
         letter-spacing: -2px;
-        margin-bottom:50px;
       }
       .right-column p{
          font-size: 20px;
@@ -46,7 +47,7 @@
         text-transform: uppercase;
       }
       .right-column span{
-        font-size: 12px;
+        font-size: 20px;
         color: #358ED7;
         letter-spacing: 1px;
         text-decoration: none;
@@ -62,6 +63,14 @@
         text-align: center;
       }
       .prc{text-align: center;}
+
+      ul,li{
+        font-size: 20px;
+        font-weight: bold;
+      }
+      li{
+        margin-right: 10%;
+      }
     </style>
 </head>
 
@@ -70,79 +79,158 @@
 <div class="container-fluid" style="margin-left:10%;">
   <!-- Slideshow Header -->
   <div class="row">
-  <div class="left col-sm-4" style="border-style:ridge;border-width:1px;margin-top:2%;padding:3%;padding-top:0; margin-bottom: 1%;">
-    <div class="container" style="margin-bottom: 5%;">
-      <h2 style="margin-left:8%;margin-bottom: 4%;">Phone</h2>
-      <div class="w3-display-container mySlides">
-       <img src="3-a.jpg" style="margin-bottom:-6px">
+    <div class="left col-sm-4" style="border-style:ridge;border-width:1px;margin-top:2%;padding:3%;padding-top:0; margin-bottom: 1%;">
+      <div class="container" style="margin-bottom: 5%;max-width: 250px;">
+        <div class="w3-display-container mySlides" style="margin-top: 25%;">
+         <img src="3-a.jpg" style="margin-bottom:-6px">
+        </div>
+        <div class="w3-display-container mySlides">
+         <img src="3-b.jpg" style="margin-bottom:-6px">
+        </div>
+        <div class="w3-display-container mySlides">
+          <img src="3-c.jpg" style="margin-bottom:-6px"> 
+        </div>  
       </div>
-      <div class="w3-display-container mySlides">
-       <img src="3-b.jpg" style="margin-bottom:-6px">
+
+      <div class="row" style="box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.20);padding: 10px;width:80%;">
+        <div class="col-sm-3 sml">
+          <img class="demo w3-opacity w3-hover-opacity-off" src="3-a.jpg" style="cursor:pointer" onclick="currentDiv(1)" >
+        </div>
+        <div class="col-sm-3 sml">
+          <img class="demo w3-opacity w3-hover-opacity-off" src="3-b.jpg" style="cursor:pointer" onclick="currentDiv(2)" >
+        </div>
+        <div class="col-sm-3 sml">
+          <img class="demo w3-opacity w3-hover-opacity-off" src="3-c.jpg" style="cursor:pointer" onclick="currentDiv(3)">
+        </div>    
       </div>
-      <div class="w3-display-container mySlides">
-        <img src="3-c.jpg" style="margin-bottom:-6px"> 
-      </div>  
     </div>
 
-    <div class="row" style="box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.20);padding: 10px;width:80%;">
-      <div class="col-sm-3 sml">
-        <img class="demo w3-opacity w3-hover-opacity-off" src="3-a.jpg" style="cursor:pointer" onclick="currentDiv(1)" >
+    <div class="right-column col-sm-7" style="margin-top: 5%;margin-left: 2%;">
+      <h1 style="">vivo V5 Lite</h1>
+      <span style="font-size:18px;font-style:italic;margin-right: 10px;">By Vivo</span>
+      <div class="stars-outer">
+          <div class="stars-inner"></div>   <!-- avg user rating -->
       </div>
-      <div class="col-sm-3 sml">
-        <img class="demo w3-opacity w3-hover-opacity-off" src="3-b.jpg" style="cursor:pointer" onclick="currentDiv(2)" >
+      
+      <hr>
+
+      <span>Min Cost- <p class="fa fa-inr" style="color: red;"> 11825</p></span>
+      <div class="row">
+        <div class="col-sm-4">
+          <svg  xmlns="http://www.w3.org/2000/svg" height="200" width="200" viewBox="0 0 200 200" data-value="6.35">
+            <path class="bg" stroke="#ccc" d="M41 149.5a77 77 0 1 1 117.93 0"  fill="none"/>
+            <path class="meter" stroke="#09c" d="M41 149.5a77 77 0 1 1 117.93 0" fill="none" stroke-dasharray="350" stroke-dashoffset="350"/><br>
+            <span style="margin: 0;">Cumulative Score</span>
+          </svg>
+        </div>
+        <div class="col-sm-4">
+          <svg  xmlns="http://www.w3.org/2000/svg" height="200" width="200" viewBox="0 0 200 200" data-value="6.46">
+            <path class="bg" stroke="#ccc" d="M41 149.5a77 77 0 1 1 117.93 0"  fill="none"/>
+            <path class="meter" stroke="#09c" d="M41 149.5a77 77 0 1 1 117.93 0" fill="none" stroke-dasharray="350" stroke-dashoffset="350"/><br>
+            <span style="margin: 0;">Review Strength Score</span>
+          </svg>
+        </div>
+        <div class="col-sm-4">
+          <svg  xmlns="http://www.w3.org/2000/svg" height="200" width="200" viewBox="0 0 200 200" data-value="0.61">
+            <path class="bg" stroke="#ccc" d="M41 149.5a77 77 0 1 1 117.93 0"  fill="none"/>
+            <path class="meter" stroke="#09c" d="M41 149.5a77 77 0 1 1 117.93 0" fill="none" stroke-dasharray="350" stroke-dashoffset="350"/><br>
+            <span style="margin: 0;">Avg. Compound Score</span>
+          </svg>
+        </div>   
       </div>
-      <div class="col-sm-3 sml">
-        <img class="demo w3-opacity w3-hover-opacity-off" src="3-c.jpg" style="cursor:pointer" onclick="currentDiv(3)">
-      </div>    
+      
+    
+     
     </div>
   </div>
+</div>
 
-  <div class="right-column col-sm-8" style="margin-top: 5%;">
-    <h1 style="">Phone name</h1>
-    <span>Min Cost- <p class="fa fa-inr"> 37647</p></span><br>
-    <span>Brand- <p>Lenovo</p></span><br>
-    <span>Model- <p>Lenovo</p></span><br>
-    <span>Rear Camera- <p>djfbeshfuewfh</p></span><br>
-    <span>Front camera- <p>Lenovo</p></span><br>
-    <span>Ram- <p>Lenovo</p></span><br>
-    <span>CPU- <p>Lenovo</p></span><br>
-    <span>Internal- <p>Lenovo</p></span><br>
-    <span>Battery- <p>Lenovo</p></span><br>
-    <span>4g- <p>Lenovo</p></span><br>
-    <span>fingerrpint- <p>Lenovo</p></span><br>
+<div class="container">
+  <h2>Technical Details</h2>
+  <table class="table table-striped">
+    <tbody>
+      <tr>
+        <td>Model</td>
+        <td>V5 Lite</td>
+      </tr>
+      <tr>
+        <td>Display</td>
+        <td>5.5 inches, 83.4 cm2 (~71.8% screen-to-body ratio)</td>
+      </tr>
+      <tr>
+        <td>Rear Camera</td>
+        <td>13 MP, f/2.2, autofocus, LED flash</td>
+      </tr>
+      <tr>
+        <td>Front Camera</td>
+        <td>16 MP, f/2.0, 1080p</td>
+      </tr>
+      <tr>
+        <td>OS</td>
+        <td>Android 6.0 (Marshmallow)</td>
+      </tr>
+      <tr>
+        <td>CPU</td>
+        <td>Octa-core</td>
+      </tr>
+      <tr>
+        <td>Internal</td>
+        <td>32 GB</td>
+      </tr>
+      <tr>
+        <td>Ram</td>
+        <td>3GB</td>
+      </tr>
+      <tr>
+        <td>Battery</td>
+        <td>Non-removable Li-Ion 3000 mAh battery</td>
+      </tr>
+      <tr>
+        <td>Dual Sim</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td>3g</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td>4g</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td>Fingerprint</td>
+        <td>Yes</td>
+      </tr>
+    </tbody>
+  </table>  
+</div>
+
+
+<div class="container" style="margin-top: 5%;margin-bottom: 5%;">
+  <ul class="nav nav-pills">
+    <li class="active"><a data-toggle="pill" href="#Flipkart">Flipkart</a></li>
+    <li><a data-toggle="pill" href="#Amazon">Amazon</a></li>
+    <li><a data-toggle="pill" href="#Snapdeal">Snapdeal</a></li>
+  </ul>
+  
+  <div class="tab-content">
+    <div id="Flipkart" class="tab-pane fade in active">
+      <p>djbhebfyewb hrefrey bdsc nbewfhu njd n</p>
+    </div>
+    <div id="Amazon" class="tab-pane fade">
+      <p>dknrh uhvndfygeyh cjnjfirujr ndbfeyfgef</p>
+    </div>
+    <div id="Snapdeal" class="tab-pane fade">
+      <p>cnbvhr eughfnvuree8 jvuhghgerjfij</p>
+    </div>
   </div>
 </div>
 
-<div class="row compare" style="margin-top:5%;margin-left: 10%;">
-    <div class="col-sm-3 shad">
-      <p>Amazon</p>
-    </div>
-    <div class="col-sm-3 shad">
-      <p>Flipkart</p>
-    </div>
-    <div class="col-sm-3 shad">
-      <p>Snapdeal</p>
-    </div> 
-</div>
-<div class="row compare" style="margin-top:1%;margin-left: 10%; margin-bottom: 10%;">
-    <div class="col-sm-3 prc">
-      <p class="fa fa-inr"> 4000</p>
-    </div>
-    <div class="col-sm-3 prc">
-      <p class="fa fa-inr"> 2345</p>
-    </div>
-    <div class="col-sm-3 prc">
-      <p class="fa fa-inr"> 3848</p>
-    </div> 
-</div>
 
-
-</div>
-
-
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="jquery.js"></script>
 <script>
-
 // Slideshow Apartment Images
 var slideIndex = 1;
 showDivs(slideIndex);
