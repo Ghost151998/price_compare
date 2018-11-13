@@ -1,0 +1,139 @@
+/*for star rating*/
+
+.stars-outer {
+  display: inline-block;
+  position: relative;
+  font-family: FontAwesome;
+}
+ 
+.stars-outer::before {
+  content: "\f006 \f006 \f006 \f006 \f006";
+}
+ 
+.stars-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+}
+ 
+.stars-inner::before {
+  content: "\f005 \f005 \f005 \f005 \f005";
+  color: #f8ce0b;
+}
+
+/*for circulat rating*/
+
+svg path {
+  will-change: auto;
+  stroke-width: 20px;
+  stroke-miterlimit: round;
+  transition: stroke-dashoffset 1500ms ease-in-out;
+}
+
+
+body {
+  padding: 70px;
+}
+
+/*for progress bar*/
+
+.pb-container-p,.pb-container-n {
+  height: 10px;
+  width: 180px;
+  margin-bottom:7%;
+  background: #d0d0d0;
+  border-radius: 10px;
+  overflow: hidden;
+  -moz-box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.25);
+}
+.pb-container-p .pb-indicator-p {
+  background: white;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+  -webkit-animation: progressp 2s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes progressp {
+  0% {
+    background:#ABE0F8;
+    width: 0%;
+  }
+  100% {
+    background:#047DB3;
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+
+.pb-container-n .pb-indicator-n {
+  background: white;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+  -webkit-animation: progressn 2s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes progressn {
+  0% {
+    background:#F9B3BA;
+    width: 0%;
+  }
+  100% {
+    background:#F9041C;
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+
+/* rating card*/
+
+.btn-grey{
+    background-color:#D8D8D8;
+  color:#FFF;
+}
+.rating-block{
+  background-color:#FAFAFA;
+  border:1px solid #EFEFEF;
+  padding:15px 15px 20px 15px;
+  border-radius:3px;
+}
+.bold{
+  font-weight:700;
+}
+.padding-bottom-7{
+  padding-bottom:7px;
+}
+
+.review-block{
+  background-color:#FAFAFA;
+  border:1px solid #EFEFEF;
+  padding:15px;
+  border-radius:3px;
+  margin-bottom:15px;
+}
+.review-block-name{
+  font-size:12px;
+  margin:10px 0;
+}
+.review-block-date{
+  font-size:12px;
+}
+.review-block-rate{
+  font-size:13px;
+  margin-bottom:15px;
+}
+.review-block-title{
+  font-size:15px;
+  font-weight:700;
+  margin-bottom:10px;
+}
+.review-block-description{
+  font-size:13px;
+}
